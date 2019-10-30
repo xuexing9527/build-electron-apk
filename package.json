@@ -1,12 +1,20 @@
 {
-  "name": "electron-quick-start",
+  "name": "xChat",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Build Electron apk",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "build": {
+    "appId": "com.xx.app.id",
+    "linux": {
+      "target": ["apk", "deb"],
+      "category": "your.app.category.type",
+      "icon": "build/unRain.gif"
+    }
+  },
+  "repository": "",
   "keywords": [
     "Electron",
     "quick",
@@ -14,9 +22,10 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "9527",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^7.0.0"
+    "electron": "^7.0.0",
+    "electron-builder": "^21.2.0"
   }
 }
